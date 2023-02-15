@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        font-family: "Inter", sans-serif;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 30px;
+      }
+      header label {
+        color: #363636;
+        display: block;
+        margin: 0;
+        font-weight: 600;
+      }
+
+      header label span {
+        color: #309f1d;
+      }
+
+      canvas {
+        width: 90%;
+        height: 90%;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <label>Score: <span id="score">0</span></label>
+      <label>High Score: <span id="high-score">0</span></label>
+    </header>
+    <script src="./js/p5.js"></script>
+    <script src="./js/sketch.js"></script>
+  </body>
+</html>
